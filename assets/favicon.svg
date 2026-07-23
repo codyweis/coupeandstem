@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#171C16"/>
+  <g fill="none" stroke="#F4EBDA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- coupe bowl -->
+    <path d="M18 24 h28 a14 10 0 0 1 -14 12 a14 10 0 0 1 -14 -12 Z"/>
+    <!-- stem -->
+    <path d="M32 36 v14"/>
+    <!-- foot -->
+    <path d="M24 51 h16"/>
+  </g>
+  <!-- monstera leaf accent -->
+  <path d="M45 17 c7 -1 11 4 10 11 c-6 1 -11 -3 -10 -11 Z" fill="#4E6147"/>
+</svg>
