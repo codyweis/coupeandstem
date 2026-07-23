@@ -141,12 +141,17 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
   justify-content: space-between;
 }
-.nav__logo {
-  height: 52px;
-  width: auto;
-  transition: height 0.5s var(--ease);
+.nav__wordmark {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--cream);
+  white-space: nowrap;
+  transition: font-size 0.5s var(--ease);
 }
-.nav.is-scrolled .nav__logo { height: 42px; }
+.nav.is-scrolled .nav__wordmark { font-size: 1.3rem; }
 .nav__links { display: flex; gap: 34px; }
 .nav__links a {
   font-size: 0.78rem;
@@ -238,7 +243,7 @@ a { color: inherit; text-decoration: none; }
 .hero__content {
   position: relative;
   z-index: 2;
-  padding: 120px 28px 90px;
+  padding: 116px 28px 128px;
   max-width: 760px;
 }
 .hero__logo {
@@ -258,10 +263,10 @@ a { color: inherit; text-decoration: none; }
 .hero__cta { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 .hero__scroll {
   position: absolute;
-  bottom: 30px;
+  bottom: 22px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 2;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -281,6 +286,8 @@ a { color: inherit; text-decoration: none; }
   0%, 100% { transform: scaleY(0.4); opacity: 0.4; transform-origin: top; }
   50%      { transform: scaleY(1); opacity: 1; transform-origin: top; }
 }
+/* Hide the scroll cue when the hero is too short to fit it without overlapping the buttons */
+@media (max-height: 860px) { .hero__scroll { display: none; } }
 
 /* ---------- Sections ---------- */
 .section { padding: clamp(72px, 11vw, 140px) 0; position: relative; }
