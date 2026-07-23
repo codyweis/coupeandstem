@@ -142,16 +142,16 @@ a { color: inherit; text-decoration: none; }
   justify-content: space-between;
 }
 .nav__wordmark {
-  font-family: var(--serif);
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-family: "Cinzel", var(--serif);
+  font-size: 1.35rem;
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
   color: var(--cream);
   white-space: nowrap;
   transition: font-size 0.5s var(--ease);
 }
-.nav.is-scrolled .nav__wordmark { font-size: 1.3rem; }
+.nav.is-scrolled .nav__wordmark { font-size: 1.15rem; }
 .nav__links { display: flex; gap: 34px; }
 .nav__links a {
   font-size: 0.78rem;
